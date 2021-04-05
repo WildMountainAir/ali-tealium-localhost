@@ -10,6 +10,10 @@ body {
     font-size-adjust: u;
 }
 
+.nav-itm {
+  margin-right: 10px;
+}
+
 .middle {
     display: flex;
     justify-content: center;
