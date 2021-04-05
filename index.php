@@ -12,25 +12,25 @@
       <body>
       <script type="text/javascript">
             var utag_data = {
-                "browse_refine_type"           : ["Size", "Color"],       //Suggested
-                "browse_refine_value"          : ["XL", "Red"],           //Suggested
+            //     "browse_refine_type"           : ["Size", "Color"],       //Suggested
+            //     "browse_refine_value"          : ["XL", "Red"],           //Suggested
                 "cart_total_items"             : "4",                     //Suggested
                 "cart_total_value"             : "77.96",                 //Suggested
                 "country_code"                 : "us",                    //Suggested
                 "language_code"                : "en",                    //Suggested
                 "page_name"                    : "Homepage",              //Required
-                "product_impression_brand"     : ["Ralph Lauren"],        //Suggested
-                "product_impression_category"  : ["Shirts"],              //Suggested
+                "product_impression_brand"     : ["Beats"],        //Suggested
+                "product_impression_category"  : ["Headphones"],              //Suggested
                 "product_impression_id"        : ["PROD123"],             //Required
                 "product_impression_list"      : ["search"],              //Suggested
                 "product_impression_name"      : ["Product One"],         //Required
                 "product_impression_position"  : ["1"],                   //Suggested
-                "product_impression_price"     : ["12.99"],               //Suggested
-                "product_impression_variant"   : ["Black"],               //Suggested
-                "product_on_page"              : ["PROD123", "PROD456"],  //Suggested
-                "search_keyword"               : "cargo",                 //Required
-                "search_results"               : "42",                    //Required
-                "site_section"                 : "Clothing",              //Required
+                "product_impression_price"     : ["150.00"],               //Suggested
+                "product_impression_variant"   : ["Red"],               //Suggested
+                "product_on_page"              : ["PROD123"],           //Suggested
+                "search_keyword"               : "headphones",                 //Required
+                "search_results"               : "1",                    //Required
+                "site_section"                 : "Electronics",              //Required
                 "tealium_event"                : "search"                 //Required
             };
         </script>
@@ -42,9 +42,10 @@
         })();
       </script>
           <nav>
-              <a href="index.php" class="lnk">Home</a>
-              <a href="products.html" class="lnk">Products</a>
-              <a href="cart.html" class="lnk">Cart</a>
+              <a href="index.php" class="lnk" id="nav-home">Home</a>
+              <a href="products.html" class="lnk" id="nav-products">Products</a>
+              <a href="cart-step1.html" class="lnk" id="nav-cart">Cart Step 1 - Add to Cart</a>
+              <a href="cart.html" class="lnk" id="nav-cart">Cart</a>
           </nav>
           <h1>
             Lorem Ipsum Translation - HOME
