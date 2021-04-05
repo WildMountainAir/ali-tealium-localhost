@@ -10,6 +10,31 @@
           <title>Hai World - CART</title>
       </head>
       <body>
+        <script>
+          var utag_data = {
+              "cart_total_items"         : "1",                                              //Suggested
+              "cart_total_value"         : "150.00",                                          //Suggested
+              "checkout_step"            : "3",                                              //Suggested
+              "country_code"             : "us",                                             //Suggested
+              "language_code"            : "en",                                             //Suggested
+              "page_name"                : "Cart",                                       //Required
+              "product_brand"            : ["Beats"],                        //Suggested
+              "product_category"         : ["Electronics"],                              //Suggested
+              "product_discount_amount"  : ["0.00"],                                 //Suggested
+              "product_id"               : ["PROD123"],                           //Required
+              "product_image_url"        : ["//alisontealium.com/images/red.png"],                  //Suggested
+              "product_name"             : ["Product One"],  //Required
+              "product_original_price"   : ["150.00"],                             //Suggested
+              "product_price"            : ["150.00"],                             //Required
+              "product_promo_code"       : [""],                                //Suggested
+              "product_quantity"         : ["1"],                                        //Required
+              "product_sku"              : ["PR-RED-1234"],                   //Required
+              "product_subcategory"      : ["Headphones"],                      //Suggested
+              "product_url"              : ["//alisontealium.com/product.html"],   //Suggested
+              "site_section"             : "Electronics",                                       //Required
+              "tealium_event"            : "cart_view"                                       //Required
+          };
+        </script>
         <script type="text/javascript">
             (function(a,b,c,d){
                 a='//tags.tiqcdn.com/utag/success-alison-sipos/main/dev/utag.js';
@@ -18,12 +43,12 @@
             })();
         </script>
           <nav>
-              <a class="lnk" href="index.php">Home</a>
-              <a class="lnk" href="products.html">Products</a>
-              <a href="cart-step1.html" class="lnk" id="nav-cart">Cart Step 1 - Add to Cart</a>
-              <a class="lnk" href="cart.html">Cart</a>
+            <a href="index.php" class="lnk nav-itm" id="nav-home">Home</a>
+            <a href="product.html" class="lnk nav-itm" id="nav-products">Product</a>
+            <a href="cart-step1.html" class="lnk nav-itm" id="nav-cart-step-1">Cart Step 1 - Add to Cart</a>
+            <a href="cart.html" class="lnk nav-itm" id="nav-cart">Cart</a>
           </nav>
-          <div class="checkout-panel middle">
+          <!-- <div class="checkout-panel middle">
             <div class="panel-body">
               <h2 class="title">Checkout here!</h2>
            
@@ -85,6 +110,6 @@
               <button class="btn back-btn">Back</button>
               <button class="btn next-btn">Next Step</button>
             </div>
-          </div>
+          </div> -->
       </body>
   </html>
