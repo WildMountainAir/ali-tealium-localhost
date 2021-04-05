@@ -12,26 +12,13 @@
       <body>
       <script type="text/javascript">
             var utag_data = {
-            //     "browse_refine_type"           : ["Size", "Color"],       //Suggested
-            //     "browse_refine_value"          : ["XL", "Red"],           //Suggested
-                "cart_total_items"             : "4",                     //Suggested
-                "cart_total_value"             : "77.96",                 //Suggested
-                "country_code"                 : "us",                    //Suggested
-                "language_code"                : "en",                    //Suggested
-                "page_name"                    : "Homepage",              //Required
-                "product_impression_brand"     : ["Beats"],        //Suggested
-                "product_impression_category"  : ["Headphones"],              //Suggested
-                "product_impression_id"        : ["PROD123"],             //Required
-                "product_impression_list"      : ["search"],              //Suggested
-                "product_impression_name"      : ["Product One"],         //Required
-                "product_impression_position"  : ["1"],                   //Suggested
-                "product_impression_price"     : ["150.00"],               //Suggested
-                "product_impression_variant"   : ["Red"],               //Suggested
-                "product_on_page"              : ["PROD123"],           //Suggested
-                "search_keyword"               : "headphones",                 //Required
-                "search_results"               : "1",                    //Required
-                "site_section"                 : "Electronics",              //Required
-                "tealium_event"                : "search"                 //Required
+              "cart_total_items"  : "1",         //Suggested
+              "cart_total_value"  : "150.00",     //Suggested
+              "country_code"      : "us",        //Suggested
+              "language_code"     : "en",        //Suggested
+              "page_name"         : "Homepage",  //Required
+              "site_section"      : "Electronics",  //Required
+              "tealium_event"     : "page_view"  //Required
             };
         </script>
       <script type="text/javascript">
@@ -42,10 +29,14 @@
         })();
       </script>
           <nav>
-              <a href="index.php" class="lnk" id="nav-home">Home</a>
-              <a href="products.html" class="lnk" id="nav-products">Products</a>
-              <a href="cart-step1.html" class="lnk" id="nav-cart">Cart Step 1 - Add to Cart</a>
-              <a href="cart.html" class="lnk" id="nav-cart">Cart</a>
+              <a href="index.php" class="lnk nav-itm" id="nav-home">Home</a>
+              <a href="category.html" class="lnk nav-itm" id="nav-category">Category</a>
+              <a href="product.html" class="lnk nav-itm" id="nav-products">Product</a>
+              <a href="cart-step1.html" class="lnk nav-itm" id="nav-cart-step-1">Cart Step 1 - Add to Cart</a>
+              <a href="cart-step2.html" class="lnk nav-itm" id="nav-cart-step-2">Cart Step 2 - Shipping</a>
+              <a href="cart-step3.html" class="lnk nav-itm" id="nav-cart-step-3">Cart Step 3 - Confirmation</a>
+              <a href="cart.html" class="lnk nav-itm" id="nav-cart">Cart</a>
+              <a href="search.html" class="lnk nav-itm" id="nav-search">Search Results</a>
           </nav>
           <h1>
             Lorem Ipsum Translation - HOME
