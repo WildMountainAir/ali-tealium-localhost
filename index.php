@@ -19,7 +19,7 @@
               "page_name"         : "Homepage",  //Required
               "site_section"      : "Electronics",  //Required
               "tealium_event"     : "page_view",  //Required
-              "customer_email"    : "test@tealium.com"
+              "customer_email"    : "alison.sipos@tealium.com"
             };
         </script>
       <script type="text/javascript">
