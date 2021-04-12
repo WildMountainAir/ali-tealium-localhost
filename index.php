@@ -18,7 +18,8 @@
               "language_code"     : "en",        //Suggested
               "page_name"         : "Homepage",  //Required
               "site_section"      : "Electronics",  //Required
-              "tealium_event"     : "page_view"  //Required
+              "tealium_event"     : "page_view",  //Required
+              "customer_email"    : "test@tealium.com"
             };
         </script>
       <script type="text/javascript">
