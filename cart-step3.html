@@ -85,26 +85,55 @@
             function completePurchase () {
                 // debugger;
                 utag.link({
-                  "cart_product_id"          : ["PROD123"],     //Suggested
-                  "cart_product_price"       : ["150"],         //Suggested
-                  "cart_product_quantity"    : ["1"],                 //Suggested
-                  "cart_product_sku"         : ["PR-RED-1234"],                   //Suggested
-                  "product_brand"            : ["Beats"],  //Suggested
-                  "product_category"         : ["Headphones"],        //Suggested
-                  "product_discount_amount"  : ["0.00"],           //Suggested
-                  "product_id"               : ["PROD123"],     //Required
-                  "product_image_url"        : ["//alisontealium.com/images/red.png"],  //Suggested
-                  "product_name"             : ["Product One"],  //Required
-                  "product_original_price"   : ["150.00"],       //Suggested
-                  "product_price"            : ["150"],       //Required
-                  "product_promo_code"       : [""],          //Suggested
-                  "product_quantity"         : ["1"],                  //Required
-                  "product_sku"              : ["PR-RED-1234"],                   //Required
-                  "product_subcategory"      : ["Electronics"],                      //Suggested
-                  "product_url"              : ["//alisontealium.com/products.html"],   //Suggested
-                  "tealium_event"            : "purchase",                  //Required
-                  "event_action"             : "complete purchase",  // required for Google Analytics
-                  "event_category"           : "button click"  // required for Google Analytics
+                "cart_total_items"         : "1",                                              //Suggested
+                "cart_total_value"         : "150.00",                                          //Suggested
+                "checkout_step"            : "3",                                              //Suggested
+                "country_code"             : "us",                                             //Suggested
+                "customer_city"            : "Boulder",                                      //Suggested
+                "customer_country"         : "United States",                                  //Suggested
+                "customer_email"           : "alison.sipos@tealium.com",                          //Suggested
+                "customer_first_name"      : "Alison",                                           //Suggested
+                "customer_id"              : "8237572",                                        //Required
+                "customer_last_name"       : "Sipos",                                          //Suggested
+                "customer_postal_code"     : "80301",                                          //Suggested
+                "customer_zip"             : "80301",
+                "customer_state"           : "CO",                                             //Suggested
+                "language_code"            : "en",                                             //Suggested
+                "order_currency_code"      : "USD",
+                "order_currency"           : "USD",                                             //Suggested
+                "order_discount"           : "0.00",                                          //Suggested
+                "order_grand_total"        : "150.00",                                          //Required
+                "order_total"              : "150.00",
+                "order_id"                 : "ORD123456",                                      //Required
+                "order_merchandise_total"  : "150.00",                                          //Suggested
+                "order_payment_type"       : "paypal",                                         //Suggested
+                "order_promo_code"         : "SPRFREE,PROMO10",                                //Suggested
+                "order_shipping"           : "6.99",                                           //Required
+                "order_shipping_type"      : "UPS",                                            //Suggested
+                "order_store"              : "mobile web",                                     //Suggested
+                "order_subtotal"           : "45.98",                                          //Required
+                "order_tax"                : "2.50",                                           //Required
+                "order_type"               : "email",                                          //Suggested
+                "page_name"                : "Confirmation",                                       //Required
+                "product_brand"            : ["Beats"],                        //Suggested
+                "product_category"         : ["Electronics"],                              //Suggested
+                "product_discount_amount"  : ["0.00"],                                 //Suggested
+                "product_id"               : ["PROD123"],                           //Required
+                "product_image_url"        : ["//alisontealium.com/images/red.png"],                  //Suggested
+                "product_name"             : ["Product One"],  //Required
+                "product_original_price"   : ["150.00"],                             //Suggested
+                "product_price"            : ["150.00"],
+                "product_unit_price"       : ["150.00"],                     //Required
+                "product_promo_code"       : [""],                                //Suggested
+                "product_quantity"         : ["1"],                                        //Required
+                "product_sku"              : ["PR-RED-1234"],                   //Required
+                "product_subcategory"      : ["Headphones"],                      //Suggested
+                "product_url"              : ["//alisontealium.com/product.html"],   //Suggested
+                "product_on_page"          : ["PR-RED-1234"],
+                "site_section"             : "Electronics",
+                "tealium_event"            : "purchase",                  //Required
+                "event_action"             : "complete purchase",  // required for Google Analytics
+                "event_category"           : "button click"  // required for Google Analytics
               });
             }
         </script>
