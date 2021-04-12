@@ -58,8 +58,8 @@
         </script>
       <script type="text/javascript">
         (function(a,b,c,d){
-            // a='//tags.tiqcdn.com/utag/success-alison-sipos/main/dev/utag.js';
-            a='//tags.tiqcdn.com/utag/success-alison-sipos/main/qa/utag.js'+"?_cb="+Math.random();
+            a='//tags.tiqcdn.com/utag/success-alison-sipos/main/dev/utag.js';
+            // a='//tags.tiqcdn.com/utag/success-alison-sipos/main/qa/utag.js'+"?_cb="+Math.random();
             b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
             a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
         })();
@@ -81,6 +81,34 @@
           <h1>
             Cart Step 3 - Confirmation
           </h1>
-          
+          <script>
+            function completePurchase () {
+                // debugger;
+                utag.link({
+                  "cart_product_id"          : ["PROD123"],     //Suggested
+                  "cart_product_price"       : ["150"],         //Suggested
+                  "cart_product_quantity"    : ["1"],                 //Suggested
+                  "cart_product_sku"         : ["PR-RED-1234"],                   //Suggested
+                  "product_brand"            : ["Beats"],  //Suggested
+                  "product_category"         : ["Headphones"],        //Suggested
+                  "product_discount_amount"  : ["0.00"],           //Suggested
+                  "product_id"               : ["PROD123"],     //Required
+                  "product_image_url"        : ["//alisontealium.com/images/red.png"],  //Suggested
+                  "product_name"             : ["Product One"],  //Required
+                  "product_original_price"   : ["150.00"],       //Suggested
+                  "product_price"            : ["150"],       //Required
+                  "product_promo_code"       : [""],          //Suggested
+                  "product_quantity"         : ["1"],                  //Required
+                  "product_sku"              : ["PR-RED-1234"],                   //Required
+                  "product_subcategory"      : ["Electronics"],                      //Suggested
+                  "product_url"              : ["//alisontealium.com/products.html"],   //Suggested
+                  "tealium_event"            : "purchase",                  //Required
+                  "event_action"             : "complete purchase",  // required for Google Analytics
+                  "event_category"           : "button click"  // required for Google Analytics
+              });
+            }
+        </script>
+        
+        <div><button onClick="completePurchase()" class="cart-btn">Complete Purchase</button></div>
       </body>
   </html>
