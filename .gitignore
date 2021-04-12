@@ -1,2 +1,3 @@
-/alisontealium.com-key.pem
-/alisontealium.com.pem
+*.pem
+alisontealium.com-key.pem
+alisontealium.com.pem
